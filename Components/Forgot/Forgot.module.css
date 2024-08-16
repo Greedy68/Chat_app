@@ -1,0 +1,21 @@
+/* CSS cho label khi có giá trị hoặc khi input được focus */
+.form-floating input:focus ~ label,
+.form-floating input:not(:placeholder-shown) ~ label {
+  transform: translateY(-20px);
+  font-size: 12px;
+  opacity: 1;
+}
+
+/* CSS cho label ban đầu */
+.form-floating label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 1rem 0.75rem;
+  pointer-events: none;
+  border: 1px solid transparent;
+  transform-origin: 0 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0.5;
+}
